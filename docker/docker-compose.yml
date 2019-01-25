@@ -1,0 +1,12 @@
+version: '3' 
+
+services:
+
+  waveforms-live:
+    build: .
+    ports:
+      - "8100:8100"
+      - "35729:35729"
+      - "53703:53703"
+    volumes:
+      - "..:/opt/vhosts/waveforms-live/"
