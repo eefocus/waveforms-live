@@ -125,7 +125,7 @@ export class LoggerPlotService {
         }
 
         if (this.timelineChartRef != undefined) {
-            this.timelineChartRef.setData(timelineData, false);
+            this.timelineChartRef.setData(<DataContainer[]>timelineData, false);
             this.updateTimelineCurtains();
         }
     }
